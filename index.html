@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Streaming App</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Music Streaming App</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="playlist">
+            <!-- Song list will be displayed here -->
+        </section>
+
+        <section id="player">
+            <audio controls class="audio-player" id="audioPlayer">
+                <source src="" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </section>
+
+        <section id="addSongForm">
+            <div class="form-container">
+                <h2>Add a New Song</h2>
+                <form id="songForm">
+                    <label for="songTitle">Title:</label>
+                    <input type="text" id="songTitle" required>
+
+                    <label for="songFile">Song File:</label>
+                    <input type="file" id="songFile" accept=".mp3" required>
+
+                    <button type="submit">Add Song</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
